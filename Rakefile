@@ -68,7 +68,7 @@ task :table do
   sh "bison -v public/calculator.jison"
 end
 
-desc "push changes to origin and crguezl"
+desc "push changes to origin and crguezl: rake push['message']"
 task :push, [ :message ] do |t, args|
   message = args[:message] || ''
   sh "git ci -am '#{message}'"
