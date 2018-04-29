@@ -1,5 +1,10 @@
 desc "Run server"
-task :default => [:use_keys, :jison] do
+task :default => [:jison] do
+  sh "node use-calculator.js 'a = 2*3;'"
+end
+
+desc "Run server"
+task :web => [:use_keys, :jison] do
   sh "rackup"
 end
 

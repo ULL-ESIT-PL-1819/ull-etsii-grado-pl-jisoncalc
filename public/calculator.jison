@@ -26,7 +26,7 @@ prog
     : expressions EOF
         { 
           $$ = $1; 
-          console.log($$);
+          //console.log($$);
           return [$$, symbol_table];
         }
     ;
@@ -37,7 +37,7 @@ expressions
     | expressions ';' s
         { $$ = $1;
           if ($3) $$.push($3); 
-          console.log($$);
+          //console.log($$);
         }
     ;
 
