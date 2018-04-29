@@ -67,3 +67,11 @@ desc "DFA table using bison -v"
 task :table do
   sh "bison -v public/calculator.jison"
 end
+
+desc "push changes to origin and crguezl"
+task :push, [ :message ] do |t, args|
+  message = args[:message] || ''
+  sh "git ci -am '#{message}'"
+  sh "git push origin master"
+  sh "git push crguezl master"
+end
