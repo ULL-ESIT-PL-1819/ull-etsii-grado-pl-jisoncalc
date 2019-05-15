@@ -4,3 +4,12 @@ database.db
 config/config.yml
 config/config_filled.yml
 .sass-cache
+.bundle/
+calc.js
+calculator.output
+calculator.tab.jison
+calculator_only_grammar.js
+calculator_only_grammar.output
+calculator_only_grammar.tab.jison
+errors
+public/styles.css.map

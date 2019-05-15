@@ -4,7 +4,6 @@
 /* operator associations and precedence */
 %right '='
 %left '+' '-'
-%left '*' '/'
 %left '^'
 %right '%'
 %left UMINUS

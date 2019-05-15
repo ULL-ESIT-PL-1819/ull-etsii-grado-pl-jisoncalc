@@ -1,6 +1,6 @@
-desc "Run server"
+desc "Run use-calculator.js"
 task :default => [:jison] do
-  sh "node use-calculator.js 'a = 2*3;'"
+  sh "node use-calculator.js"
 end
 
 desc "Run server"

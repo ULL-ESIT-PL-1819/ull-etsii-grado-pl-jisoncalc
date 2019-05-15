@@ -86,6 +86,6 @@ e
     | PI
         {$$ = Math.PI;}
     | ID 
-        { $$ = symbol_table[yytext] || 0; }
+        { $$ = symbol_table[$1] || 0; }
     ;
 
